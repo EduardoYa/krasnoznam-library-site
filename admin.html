@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <script type="module" src="../assets/firebase.js"></script>
+    <script type="module" src="../assets/admin.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Админ-панель</h1>
+    </header>
+    <main>
+        <div id="login-form">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Пароль">
+            <button id="login-btn">Войти</button>
+        </div>
+        <div id="admin-panel" style="display: none;">
+            <button id="logout-btn">Выйти</button>
+            <h2>Добавить новость</h2>
+            <textarea id="news-text" placeholder="Текст новости"></textarea>
+            <input type="file" id="news-image" accept="image/*">
+            <button id="publish-btn">Опубликовать</button>
+            <h2>Существующие новости</h2>
+            <div id="admin-news-list"></div>
+        </div>
+    </main>
+</body>
+</html>
